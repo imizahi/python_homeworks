@@ -35,8 +35,8 @@ class Toyota:
         if gear_counter == '-' or gear_counter == 'down':
             self.gear -= 1
             if self.gear < -1:
-                self.gear -= 1
-                print("Gear can`t be less than reverse")
+                self.gear = -1
+                print(f"Gear can`t be less than reverse, gear is {self.gear}")
             else:
                 print(f"Your gear is {self.gear}")
 

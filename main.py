@@ -2,7 +2,7 @@ from models import Toyota
 while True:
     print(
         '1. Add new car\n'
-        '2. Show cars'
+        '2. Quit\n'
     )
     flag = input("Chose menu item\n")
 
@@ -28,3 +28,6 @@ while True:
                 new_car.change_colour(color)
             elif flag_option == '4' or 'q':
                 break
+    if flag == '2':
+        break
+        
